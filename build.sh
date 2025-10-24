@@ -26,7 +26,7 @@ build() {
   chmod +x crane
 
   if [[ "$CIRCLE_BRANCH" == "master" ]]; then
-    docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+    docker login -u $DOCKER_USERNAME -p $DOCKERHUB_TOKEN
     docker buildx create --use
     docker buildx build --no-cache --push \
       --platform=linux/amd64,linux/arm/v7,linux/arm64/v8,linux/arm/v6,linux/ppc64le,linux/s390x \
