@@ -8,9 +8,11 @@ Auto-trigger docker build for [minio](https://github.com/minio/minio) when new r
 
 ### NOTES
 
-The latest docker tag is the latest release version (https://github.com/minio/minio/releases/latest)
+The docker tag `latest-release` is the latest release version (https://github.com/minio/minio/releases/latest)
 
-Please avoid to use `latest` tag for any production deployment. Tag with right version is the proper way, such as `alpine/minio:RELEASE.2025-10-15T17-29-55Z`
+Please avoid to use `latest-release` tag for any production deployment. Tag with right version is the proper way, such as `alpine/minio:RELEASE.2025-10-15T17-29-55Z`
+
+For old tags, pull from https://hub.docker.com/r/minio/minio
 
 ### Github Repo
 
@@ -26,11 +28,22 @@ https://hub.docker.com/r/alpine/minio/tags/
 
 # Usage
 
-TODO
+Standalone Mode (Local Storage)
+
+```
+docker run -p 9000:9000 -p 9001:9001 alpine/minio:RELEASE.2025-10-15T17-29-55Z server /tmp/minio --console-address :9001
+```
+Now open the web console:
+
+http://localhost:9001
+
+Default root credentials (username:password) is `minioadmin:minioadmin`
 
 # Why we need it
 
-Mostly it is used during CI/CD (continuous integration and continuous delivery) or as part of an automated build/deployment
+The owner refused to privde the docker images any more, full story at:
+
+https://github.com/minio/minio/issues/21647
 
 # The Processes to build this image
 
