@@ -39,6 +39,8 @@ http://localhost:9001
 
 Default root credentials (username:password) is `minioadmin:minioadmin`
 
+<img width="895" height="362" alt="image" src="https://github.com/user-attachments/assets/7acabfea-8796-4105-b14e-243b2fda6305" />
+
 # Why we need it
 
 The owner refused to privde the docker images any more, full story at:
