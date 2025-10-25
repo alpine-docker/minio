@@ -40,7 +40,7 @@ jobs:
              echo "build image for ${VERSION}"
              echo "build_required=true" >> $GITHUB_OUTPUT
            else
-             echo "Tag is exist, skip"
+             echo "Tag ${VERSION} is exist, skip"
              echo "build_required=false" >> $GITHUB_OUTPUT
            fi
 
