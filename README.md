@@ -8,6 +8,8 @@ Auto-trigger docker build for [minio](https://github.com/minio/minio) when new r
 
 ### NOTES
 
+There is no tag `latest`
+
 The docker tag `latest-release` is the latest release version (https://github.com/minio/minio/releases/latest)
 
 Please avoid to use `latest-release` tag for any production deployment. Tag with right version is the proper way, such as `alpine/minio:RELEASE.2025-10-15T17-29-55Z`
