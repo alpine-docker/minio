@@ -26,6 +26,12 @@ https://github.com/alpine-docker/minio/actions
 
 https://hub.docker.com/r/alpine/minio/tags/
 
+### multi-arch images
+
+Multi-arch images, including: --platform linux/amd64,linux/arm/v7,linux/arm64/v8,linux/arm/v6,linux/ppc64le,linux/s390x.
+
+<img width="1254" height="772" alt="image" src="https://github.com/user-attachments/assets/52fa7a1b-063c-4e00-87d8-8422f642ebbb" />
+
 # Usage
 
 Standalone Mode (Local Storage)
